@@ -62,11 +62,27 @@ h1 {
 
 }
 
+.fototrivia {
+    width: 500px;
+    float: middle;
+    margin: 12px;
+    border: 3px solid blue;
+    border-radius: 10px;
+
+
+}
+
+.boton-jugar {
+
+    color: cyan;
+}
+
 .contenido {
     width: 400px;
 }
 
 .subtitulo {
+    color: white;
     margin-left: 16px;
     padding-top: 16px;
 }
@@ -77,12 +93,17 @@ h1 {
 }
 
 .header {
-    background-color: #2259a1;
-    height: 60px;
-    line-height: 60px;
+    color: white;
+    background-color: #0096c7;
+    width: 600px;
+    border-radius: 12px;
+    margin-top: 40px;
+    border: 3px solid white;
+    border-radius: 15px;
 }
 
 .main {
+    color: white;
     margin-top: 20px;
 }
 
@@ -120,10 +141,12 @@ h1 {
 .tabla th, .tabla td {
     border: 1px solid black;
     padding: 8px;
+    color: white;
 }
 
 .tabla th {
-    background-color: #104fe2;
+    background-color: #0096c7;
+    color: white;
 }
 
 html {
@@ -143,32 +166,18 @@ html {
     background-color: #333;
     color: white;
     border-radius: 8px;
-    transition: 0.3s;
-}
-
-.respuestas a:hover {
-    background-color: #555;
-}
-
-/* correcta */
-.correcta:hover {
-    background-color: green;
-}
-
-/* incorrecta */
-.incorrecta:hover {
-    background-color: red;
 }
 
 .imagen-trivia {
-    width: 300px;      /* tamaño */
-    margin-top: 20px;  /* separación del título */
+    width: 300px;
+    margin-top: 20px;
     border-radius: 10px;
 }
 
 .nav {
     background-color: rgb(35, 38, 222);
     width: 100%;
+    background: linear-gradient(to bottom, #2c2cff, #0077b6);
 }
 
 .nav ul {
@@ -179,8 +188,8 @@ html {
     display: flex;
     gap: 10px;
 
-    flex-wrap: nowrap;       /* 👈 una sola fila */
-    justify-content: flex-start; /* 👈 arranca desde la izquierda */
+    flex-wrap: nowrap;       
+    justify-content: flex-start;
 }
 
 .nav li {
@@ -197,24 +206,89 @@ html {
     transition: 0.3s;
 }
 
-.nav a:hover {
-    background-color: rgb(80, 150, 255);
-}
 
 ul, ol {
+    cursor: pointer;
+    color: rgb(11, 35, 63);
     width: 300px;
     margin: 20px auto;
     text-align: left;
 }
 
-li:hover {
-    margin: 10px 0;
-    color: red;
-    transform: translateX(5px);
-    transition: 0.3s;
-}
 
 .footer {
-
     text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #00b4d8;
+    color: white;
+}
+
+.bloque {
+    background-color: #0096c7;
+    padding: 15px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 15px auto;
+    width: 300px;
+}
+
+.contenedor {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.barralateral {
+    width: 200px;
+    background-color: #00b4d8;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 20px;
+    color: white;
+}
+
+.barralateral h3 {
+    text-align: center;
+}
+
+.barralateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barralateral li {
+    margin-bottom: 10px;
+}
+
+.barralateral a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+
+.mainplaylist {
+    flex: 1;
+    margin: 0 20px;
+    background-color: #00b4d8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.activo {
+
+    background-color: #0077b6;
+    font-weight: bold;
+
+
+}
+
+
+iframe {
+    margin-top: 20px;
+    border-radius: 10px;
 }
