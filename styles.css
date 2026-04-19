@@ -9,7 +9,7 @@ html, body {
 
     background-image: 
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("../imagenes/fondo-trivia.jpg");
+        url("Imagenes/fondo-trivia.jpg");
 
     background-size: cover;
     background-position: center;
